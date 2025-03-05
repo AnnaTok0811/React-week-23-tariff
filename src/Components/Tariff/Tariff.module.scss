@@ -1,0 +1,129 @@
+.tariff{
+    width: 200px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding:0px;
+    border: 1px  #fafafa solid;
+}
+
+.tariff:nth-child(3){
+    .tariff-title{
+        height: 70px;
+    }
+}
+
+.tariff-speed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9dcdd;
+    color: #444747;
+    height:60px; 
+}
+
+.tariff-volume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #afb1b1;
+    color: #333434;
+    height: 70px;
+}
+.tariff-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border: #d9dcdd 1px solid;
+    font-size: 24px 
+}
+
+p{
+    margin: 0;
+}
+
+.tariff-price{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 20px;
+
+}
+
+.tariff-price p{
+    position: relative;
+    font-size: 40px;
+}
+
+
+.tariff-price p::before  {
+    content: 'руб';
+    position: absolute;
+    top: -20px;
+    left: -50px;
+    font-family: Georgia, serif;
+    font-size: 20px;
+}
+
+.tariff-price p::after {
+    content: '/мес';
+    position: absolute;
+    right: -50px;
+    bottom: -10px;
+    font-family: Georgia, serif;
+    font-size: 20px;
+}
+
+
+.first{
+    .tariff-title{
+        background-color:#0f7885;}
+
+    .tariff-price{
+        color: #ffffff;
+        background-color: #06a1b5;
+    }
+    
+}
+.second{
+    .tariff-title{
+        background-color: #04795f;
+    }
+    .tariff-price{
+        color: #ffffff;
+        background-color:  #2b9b83;
+        
+    }
+}
+.third{
+    
+    .tariff-title{
+        background-color: #a9433c;
+    }
+    .tariff-price{
+        color: #ffffff;
+        background-color:  #cc8c87;    
+    }
+    
+}
+.fourth{
+    .tariff-title{
+        background-color: #000000;
+    }
+    .tariff-price{
+        color: #ffffff;
+        background-color:  #444444;
+        
+    }
+}
+
+
+
+
