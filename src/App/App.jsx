@@ -1,4 +1,5 @@
 
+import { useState } from 'react';
 import Tariff from '../Components/Tariff/Tariff.jsx';
 import './App.scss'
 
@@ -34,10 +35,17 @@ const jsonData = [
 ];
 
 function App() {
+  const [activeIndex, setActiveIndex]=useState(0)
+  const onClick = (index)=>{
+        setActiveIndex(index) 
+  }
+console.log(activeIndex)
   return (
     <>
+    <h1>Интернет тарифы</h1>
     <div className='conteiner'>
-      {jsonData.map((item)=> <Tariff key={item.title} {...item}/>)}
+      {jsonData.map((item,index)=> <Tariff key={item.title} onClick={()=>onClick(index)} isActive={index===activeIndex} {...item}/>)}
+
       </div>
     </>
   );
